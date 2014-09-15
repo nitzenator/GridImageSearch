@@ -24,6 +24,6 @@ Walkthrough of all user stories:
 
 ![Video Walkthrough](grid_image_search.gif)
 ![Video Walkthrough StaggeredView](grid_image_search_sv.gif)
-![Video Walkthrough StaggeredView](grid_image_search_tiv.gif)
+![Video Walkthrough TouchImageView](grid_image_search_tiv.gif)
 GIF created with [LiceCap](http://www.cockos.com/licecap/)
 
