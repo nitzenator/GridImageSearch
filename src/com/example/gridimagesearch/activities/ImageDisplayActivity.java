@@ -2,6 +2,7 @@ package com.example.gridimagesearch.activities;
 
 import com.example.gridimagesearch.R;
 import com.example.gridimagesearch.models.ImageResult;
+import com.ortiz.touch.TouchImageView;
 import com.squareup.picasso.Picasso;
 
 import android.os.Bundle;
@@ -21,7 +22,7 @@ public class ImageDisplayActivity extends Activity {
 		// Show the Up button in the action bar.
 		setupActionBar();
 		ImageResult imageResult = (ImageResult) getIntent().getSerializableExtra("image_result");
-		ImageView ivImageResult = (ImageView) findViewById(R.id.ivImageResult);
+		TouchImageView ivImageResult = (TouchImageView) findViewById(R.id.ivImageResult);
 		Picasso.with(this).load(imageResult.getFullUrl()).into(ivImageResult);
 	}
 

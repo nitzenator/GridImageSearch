@@ -13,7 +13,8 @@ Completed user stories:
  * [x] Subsequent searches will have any filters applied to the search results
  * [x] User can tap on any image in results to see the image full-screen
  * [x] User can scroll down “infinitely” to continue loading more image results (up to 8 pages) 
-
+ * [x] Stretch: Use the StaggeredGridView to display visually interesting image results
+ * [x] Stretch: User can zoom or pan images displayed in full-screen detail view
 Notes:
 
 * Spent some time going over understanding of how the endless scrolling works and working with spinners
@@ -22,6 +23,7 @@ Notes:
 Walkthrough of all user stories:
 
 ![Video Walkthrough](grid_image_search.gif)
-
+![Video Walkthrough StaggeredView](grid_image_search_sv.gif)
+![Video Walkthrough StaggeredView](grid_image_search_tiv.gif)
 GIF created with [LiceCap](http://www.cockos.com/licecap/)
 
