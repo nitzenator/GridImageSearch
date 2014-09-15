@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SearchActivity" >
+    tools:context=".SearchActivity" xmlns:app="http://schemas.android.com/apk/res/com.example.gridimagesearch">
 
     <EditText
         android:id="@+id/etQuery"
@@ -27,7 +27,9 @@
         android:layout_alignParentTop="true"
         android:text="@string/button_search_name" />
 
-    <GridView
+    <com.etsy.android.grid.StaggeredGridView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/gvImages"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -35,8 +37,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_below="@+id/etQuery"
-        android:numColumns="3" >
-
-    </GridView>
-
+        app:column_count="3"
+        app:item_margin="8dp"
+        />
 </RelativeLayout>

@@ -24,12 +24,13 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.EditText;
-import android.widget.GridView;
+//import android.widget.GridView;
+import com.etsy.android.grid.StaggeredGridView;
 
 public class SearchActivity extends Activity {
 	
 	private EditText etQuery;
-	private GridView gvImages;
+	private StaggeredGridView gvImages;
 	
 	private ArrayList<ImageResult> imageResults;
 	private ImageResultsAdapter aImageResults;
@@ -84,7 +85,7 @@ public class SearchActivity extends Activity {
 
 	private void setUpViews(){
 		etQuery = (EditText) findViewById(R.id.etQuery);
-		gvImages = (GridView) findViewById(R.id.gvImages);
+		gvImages = (StaggeredGridView) findViewById(R.id.gvImages);
 	}
 
 	@Override
