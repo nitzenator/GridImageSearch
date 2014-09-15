@@ -1,7 +1,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
     <item android:id="@+id/search_settings"
         android:title="@string/search_settings"
-        android:icon="@drawable/settings_icon"
+        android:icon="@drawable/settings_icon2"
         android:showAsAction="ifRoom|withText"
         android:onClick="onLaunchSettings"/>
 </menu>

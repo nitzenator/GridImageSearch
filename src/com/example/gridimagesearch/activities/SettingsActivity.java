@@ -1,8 +1,6 @@
 package com.example.gridimagesearch.activities;
 
 import com.example.gridimagesearch.R;
-import com.example.gridimagesearch.R.layout;
-import com.example.gridimagesearch.R.menu;
 import com.example.gridimagesearch.models.Settings;
 
 import android.os.Bundle;
@@ -46,6 +44,7 @@ public class SettingsActivity extends Activity implements OnItemSelectedListener
 		sizeAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		// Apply the adapter to the spinner
 		sizeSpinner.setAdapter(sizeAdapter);
+		sizeSpinner.setSelection(sizeAdapter.getPosition(settings.getImageSize()));
 		sizeSpinner.setOnItemSelectedListener(this);
 		
 		
@@ -58,6 +57,7 @@ public class SettingsActivity extends Activity implements OnItemSelectedListener
 		colorAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		// Apply the adapter to the spinner
 		colorSpinner.setAdapter(colorAdapter);
+		colorSpinner.setSelection(colorAdapter.getPosition(settings.getColorFilter()));
 		colorSpinner.setOnItemSelectedListener(this);
 		
 		
@@ -70,10 +70,12 @@ public class SettingsActivity extends Activity implements OnItemSelectedListener
 		typeAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		// Apply the adapter to the spinner
 		typeSpinner.setAdapter(typeAdapter);
+		typeSpinner.setSelection(typeAdapter.getPosition(settings.getImageType()));
 		typeSpinner.setOnItemSelectedListener(this);
 		
 		
 		siteFilter = (TextView) findViewById(R.id.site);
+		siteFilter.setText(settings.getSiteFilter());
 		
 		
 	}
